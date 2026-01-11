@@ -785,7 +785,6 @@ body {
 
 /* Projects List */
 .projects-list {
-    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -814,7 +813,6 @@ body {
 
 /* About Content */
 .about-content {
-    max-width: 800px;
     margin: 0 auto 3rem auto;
 }
 
@@ -846,7 +844,6 @@ body {
 
 /* About Values */
 .about-values {
-    max-width: 800px;
     margin: 0 auto 3rem auto;
     background: #f9f9f9;
     padding: 2.5rem;
@@ -893,7 +890,6 @@ body {
 
 /* Technology Skills */
 .about-skills {
-    max-width: 800px;
     margin: 0 auto 3rem auto;
     background: #f9f9f9;
     padding: 2.5rem;
@@ -929,7 +925,6 @@ body {
 
 /* Learn More */
 .about-learn-more {
-    max-width: 800px;
     margin: 0 auto 3rem auto;
     background: #f9f9f9;
     padding: 2.5rem;
@@ -944,7 +939,6 @@ body {
 
 /* Work Together */
 .about-work-together {
-    max-width: 800px;
     margin: 0 auto 3rem auto;
     background: #f9f9f9;
     padding: 2.5rem;
@@ -1018,7 +1012,6 @@ body {
 
 /* Resume Content */
 .resume-content {
-    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -2018,7 +2011,6 @@ body {
 
 /* Project Page Styles */
 .project-page {
-    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -2280,6 +2272,14 @@ body {
 
 .project-content h2:first-child {
     margin-top: 0;
+}
+
+.project-content h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-weight: 600;
 }
 
 .project-content p {
