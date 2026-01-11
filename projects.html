@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Nicole Sabin - UX and Instructional Designer">
+    <title>Projects - Nicole Sabin Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Skip to Main Content -->
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-title">Nicole Sabin Portfolio</h1>
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="menu-icon">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="main-nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="index.html">Portfolio Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Off Canvas Menu -->
+    <div class="off-canvas-menu" id="off-canvas-menu">
+        <div class="off-canvas-header">
+            <h2>Nicole Sabin Portfolio</h2>
+            <button class="close-menu" aria-label="Close menu">&times;</button>
+        </div>
+        <ul class="off-canvas-nav">
+            <li><a href="index.html">Portfolio Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        <div class="container">
+            <section class="page-header">
+                <h2 class="page-title">Projects</h2>
+            </section>
+
+            <!-- Filter Buttons -->
+            <section class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="elearning">eLearning</button>
+                <button class="filter-btn" data-filter="ux-design">UX Design</button>
+                <button class="filter-btn" data-filter="technical-writing">Technical Writing</button>
+                <button class="filter-btn" data-filter="videography">Videography</button>
+                <button class="filter-btn" data-filter="project-management">Project Management</button>
+            </section>
+
+            <!-- Projects Grid -->
+            <section class="projects-grid-filtered">
+                <a href="projects/agile-project-management.html" class="project-card-filtered" data-category="project-management">
+                    <div class="project-image-wrapper">
+                        <img src="images/portfolio-mockups.png" alt="Agile Project Management - Plant Care App" class="project-image">
+                    </div>
+                    <h3 class="project-title">Agile Project Management</h3>
+                    <div class="project-category-badge">
+                        <span class="category-tag category-project-management">Project Management</span>
+                    </div>
+                    <p class="project-description">
+                        Showcasing the elements of my Agile Project Management plan for designing a plant care app. 
+                        Project plan includes budget, timeline, and more.
+                    </p>
+                    <div class="project-skills-preview">
+                        <strong>Skills:</strong> Agile Project Management, Scrum, Project Budget, Monday.com
+                    </div>
+                    <span class="project-link">Learn More</span>
+                </a>
+
+                <a href="projects/articulate-storyline-course.html" class="project-card-filtered" data-category="elearning">
+                    <div class="project-image-wrapper">
+                        <img src="images/portfolio-mockups-1.png" alt="Articulate Storyline Course - Lifeguard Training" class="project-image">
+                    </div>
+                    <h3 class="project-title">Articulate Storyline Course</h3>
+                    <div class="project-category-badge">
+                        <span class="category-tag category-elearning">eLearning</span>
+                    </div>
+                    <p class="project-description">
+                        Creating an onboarding course for New Lifeguards. Follow along as you learn how to be a lifeguard 
+                        while collecting badges in your fanny pack.
+                    </p>
+                    <div class="project-skills-preview">
+                        <strong>Skills:</strong> Articulate Storyline, Graphics Creation, Amazon Web Services
+                    </div>
+                    <span class="project-link">Learn More</span>
+                </a>
+
+                <a href="projects/musician-documentary.html" class="project-card-filtered" data-category="videography">
+                    <div class="project-image-wrapper">
+                        <img src="images/portfolio-mockups-2.png" alt="Musician Documentary" class="project-image">
+                    </div>
+                    <h3 class="project-title">Musician Documentary</h3>
+                    <div class="project-category-badge">
+                        <span class="category-tag category-videography">Videography</span>
+                    </div>
+                    <p class="project-description">
+                        Showcasing my work taking videos and editing them in Adobe Premiere Pro. The subject is a local 
+                        music artist from Logan, Utah.
+                    </p>
+                    <div class="project-skills-preview">
+                        <strong>Skills:</strong> Adobe Premiere Pro, Rule of Thirds, L-Cuts & J-Cuts, Audio Mixing
+                    </div>
+                    <span class="project-link">Learn More</span>
+                </a>
+
+                <a href="projects/pope-tech-ux-design.html" class="project-card-filtered" data-category="ux-design">
+                    <div class="project-image-wrapper">
+                        <img src="images/visual-copy.jpg" alt="Pope Tech UX Design" class="project-image">
+                    </div>
+                    <h3 class="project-title">Pope Tech UX Design</h3>
+                    <div class="project-category-badge">
+                        <span class="category-tag category-ux-design">UX Design</span>
+                    </div>
+                    <p class="project-description">
+                        UX design project demonstrating expertise in user experience design, from research and user persona 
+                        development to wireframing and prototyping.
+                    </p>
+                    <div class="project-skills-preview">
+                        <strong>Skills:</strong> UX Design, Lucidchart, Adobe XD, User Personas
+                    </div>
+                    <span class="project-link">Learn More</span>
+                </a>
+
+                <a href="projects/web-design.html" class="project-card-filtered" data-category="ux-design">
+                    <div class="project-image-wrapper">
+                        <img src="images/visual-copy.jpg" alt="Web Design" class="project-image">
+                    </div>
+                    <h3 class="project-title">Web Design</h3>
+                    <div class="project-category-badge">
+                        <span class="category-tag category-ux-design">UX Design</span>
+                    </div>
+                    <p class="project-description">
+                        Web design project demonstrating expertise in web design, from research and user persona 
+                        development to wireframing and prototyping.
+                    </p>
+                    <div class="project-skills-preview">
+                        <strong>Skills:</strong> Web Design, Lucidchart, Adobe XD, User Personas
+                    </div>
+                    <span class="project-link">Learn More</span>
+                </a>
+
+                <a href="projects/canvas-guide.html" class="project-card-filtered" data-category="technical-writing">
+                    <div class="project-image-wrapper">
+                        <img src="images/portfolio-mockups-3.png" alt="Canvas How-To Guide" class="project-image">
+                    </div>
+                    <h3 class="project-title">Canvas How-To Guide</h3>
+                    <div class="project-category-badge">
+                        <span class="category-tag category-technical-writing">Technical Writing</span>
+                    </div>
+                    <p class="project-description">
+                        A technical writing project designed to walk a new user through Instructure's Learning Management 
+                        System, Canvas.
+                    </p>
+                    <div class="project-skills-preview">
+                        <strong>Skills:</strong> Instructure Canvas, Technical Writing, Microsoft Word
+                    </div>
+                    <span class="project-link">Learn More</span>
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/projects-filter.js"></script>
+</body>
+</html>
