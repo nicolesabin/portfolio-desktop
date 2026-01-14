@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Nicole Sabin - UX and Instructional Designer">
+    <title>Contact - Nicole Sabin Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="apple-touch-icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Skip to Main Content -->
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <!-- Header with Navigation -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="site-title">
+                    <img src="images/nicole-sabin-logo.png" alt="Nicole Sabin" class="site-logo">
+                </a>
+                <nav class="main-nav" id="main-nav">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="menu-icon">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Off Canvas Menu -->
+    <div class="off-canvas-menu" id="off-canvas-menu">
+        <div class="off-canvas-header">
+            <a href="index.html" class="off-canvas-logo">
+                <img src="images/nicole-sabin-logo.png" alt="Nicole Sabin" class="site-logo">
+            </a>
+            <button class="close-menu" aria-label="Close menu">&times;</button>
+        </div>
+        <ul class="off-canvas-nav">
+            <li><a href="index.html">Portfolio Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        <div class="container">
+            <section class="page-header">
+                <h2 class="page-title">Get in Touch</h2>
+                <p class="page-subtitle">
+                    I'd love to hear from you! Fill out the form below to send me an email.
+                </p>
+            </section>
+
+            <!-- Contact Form -->
+            <section class="contact-form-section">
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="sender-name" class="form-label">Your Name <span class="required">*</span></label>
+                        <input 
+                            type="text" 
+                            id="sender-name" 
+                            name="sender-name" 
+                            class="form-input" 
+                            required
+                            aria-required="true"
+                            placeholder="Enter your name"
+                        >
+                        <span class="form-error" id="sender-name-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sender-email" class="form-label">Your Email <span class="required">*</span></label>
+                        <input 
+                            type="email" 
+                            id="sender-email" 
+                            name="sender-email" 
+                            class="form-input" 
+                            required
+                            aria-required="true"
+                            placeholder="your.email@example.com"
+                        >
+                        <span class="form-error" id="sender-email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject <span class="required">*</span></label>
+                        <input 
+                            type="text" 
+                            id="subject" 
+                            name="subject" 
+                            class="form-input" 
+                            required
+                            aria-required="true"
+                            placeholder="What is this regarding?"
+                        >
+                        <span class="form-error" id="subject-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message <span class="required">*</span></label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            class="form-textarea" 
+                            rows="8"
+                            required
+                            aria-required="true"
+                            placeholder="Tell me about your project, question, or how I can help..."
+                        ></textarea>
+                        <span class="form-error" id="message-error"></span>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-submit">Send Email</button>
+                        <button type="reset" class="btn-reset">Clear Form</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Contact Info -->
+            <section class="contact-info-section">
+                <div class="contact-info-card">
+                    <h3 class="contact-info-title">Direct Contact</h3>
+                    <p class="contact-info-text">
+                        You can also reach me directly at:
+                    </p>
+                    <p class="contact-email-direct">
+                        <a href="mailto:nicole.sabin.m@gmail.com" class="contact-email-link">nicole.sabin.m@gmail.com</a>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
