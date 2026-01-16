@@ -57,11 +57,11 @@
     <main id="main-content" class="main-content">
         <div class="container">
             <section class="page-header">
-                <h2 class="page-title">Projects</h2>
+                <h1 class="page-title">Projects</h1>
             </section>
 
-            <!-- Filter Buttons -->
-            <section class="project-filters">
+            <!-- Filter Buttons - Hidden -->
+            <section class="project-filters" style="display: none;">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="elearning">eLearning</button>
                 <button class="filter-btn" data-filter="ux-design">UX Design</button>
@@ -72,6 +72,19 @@
 
             <!-- Projects Grid -->
             <section class="projects-grid-filtered">
+                <a href="projects/childcare-website.html" class="project-card-filtered" data-category="web-design">
+                    <div class="project-image-wrapper">
+                        <img src="images/mockup-childcare.jpg" alt="Child Care Website Redesign" class="project-image">
+                    </div>
+                    <h3 class="project-title">Child Care Website Redesign</h3>
+                    <div class="project-category-badge">
+                        <span class="category-tag category-web-design">Web Design</span>
+                    </div>
+                    <div class="project-skills-preview">
+                        <strong>Skills:</strong> Web Design, Lucidchart, Adobe XD, User Personas
+                    </div>
+                </a>
+
                 <a href="projects/agile-project-management.html" class="project-card-filtered" data-category="project-management">
                     <div class="project-image-wrapper">
                         <img src="images/portfolio-mockups.png" alt="Agile Project Management - Plant Care App" class="project-image">
@@ -80,14 +93,9 @@
                     <div class="project-category-badge">
                         <span class="category-tag category-project-management">Project Management</span>
                     </div>
-                    <p class="project-description">
-                        Showcasing the elements of my Agile Project Management plan for designing a plant care app. 
-                        Project plan includes budget, timeline, and more.
-                    </p>
                     <div class="project-skills-preview">
                         <strong>Skills:</strong> Agile Project Management, Scrum, Project Budget, Monday.com
                     </div>
-                    <span class="project-link">Learn More</span>
                 </a>
 
                 <a href="projects/articulate-storyline-course.html" class="project-card-filtered" data-category="elearning">
@@ -98,35 +106,12 @@
                     <div class="project-category-badge">
                         <span class="category-tag category-elearning">eLearning</span>
                     </div>
-                    <p class="project-description">
-                        Creating an onboarding course for New Lifeguards. Follow along as you learn how to be a lifeguard 
-                        while collecting badges in your fanny pack.
-                    </p>
                     <div class="project-skills-preview">
                         <strong>Skills:</strong> Articulate Storyline, Graphics Creation, Amazon Web Services
                     </div>
-                    <span class="project-link">Learn More</span>
                 </a>
 
-                <a href="projects/musician-documentary.html" class="project-card-filtered" data-category="videography">
-                    <div class="project-image-wrapper">
-                        <img src="images/portfolio-mockups-2.png" alt="Musician Documentary" class="project-image">
-                    </div>
-                    <h3 class="project-title">Musician Documentary</h3>
-                    <div class="project-category-badge">
-                        <span class="category-tag category-videography">Videography</span>
-                    </div>
-                    <p class="project-description">
-                        Showcasing my work taking videos and editing them in Adobe Premiere Pro. The subject is a local 
-                        music artist from Logan, Utah.
-                    </p>
-                    <div class="project-skills-preview">
-                        <strong>Skills:</strong> Adobe Premiere Pro, Rule of Thirds, L-Cuts & J-Cuts, Audio Mixing
-                    </div>
-                    <span class="project-link">Learn More</span>
-                </a>
-
-                <a href="projects/pope-tech-ux-design.html" class="project-card-filtered" data-category="ux-design">
+                <a href="projects/pope-tech.html" class="project-card-filtered" data-category="ux-design">
                     <div class="project-image-wrapper">
                         <img src="images/visual-copy.jpg" alt="Pope Tech UX Design" class="project-image">
                     </div>
@@ -134,32 +119,9 @@
                     <div class="project-category-badge">
                         <span class="category-tag category-ux-design">UX Design</span>
                     </div>
-                    <p class="project-description">
-                        UX design project demonstrating expertise in user experience design, from research and user persona 
-                        development to wireframing and prototyping.
-                    </p>
                     <div class="project-skills-preview">
                         <strong>Skills:</strong> UX Design, Lucidchart, Adobe XD, User Personas
                     </div>
-                    <span class="project-link">Learn More</span>
-                </a>
-
-                <a href="projects/web-design.html" class="project-card-filtered" data-category="ux-design">
-                    <div class="project-image-wrapper">
-                        <img src="images/visual-copy.jpg" alt="Web Design" class="project-image">
-                    </div>
-                    <h3 class="project-title">Web Design</h3>
-                    <div class="project-category-badge">
-                        <span class="category-tag category-ux-design">UX Design</span>
-                    </div>
-                    <p class="project-description">
-                        Web design project demonstrating expertise in web design, from research and user persona 
-                        development to wireframing and prototyping.
-                    </p>
-                    <div class="project-skills-preview">
-                        <strong>Skills:</strong> Web Design, Lucidchart, Adobe XD, User Personas
-                    </div>
-                    <span class="project-link">Learn More</span>
                 </a>
 
                 <a href="projects/canvas-guide.html" class="project-card-filtered" data-category="technical-writing">
@@ -170,18 +132,48 @@
                     <div class="project-category-badge">
                         <span class="category-tag category-technical-writing">Technical Writing</span>
                     </div>
-                    <p class="project-description">
-                        A technical writing project designed to walk a new user through Instructure's Learning Management 
-                        System, Canvas.
-                    </p>
                     <div class="project-skills-preview">
                         <strong>Skills:</strong> Instructure Canvas, Technical Writing, Microsoft Word
                     </div>
-                    <span class="project-link">Learn More</span>
+                </a>
+
+                <a href="projects/musician-documentary.html" class="project-card-filtered" data-category="videography">
+                    <div class="project-image-wrapper">
+                        <img src="images/portfolio-mockups-2.png" alt="Musician Documentary" class="project-image">
+                    </div>
+                    <h3 class="project-title">Musician Documentary</h3>
+                    <div class="project-category-badge">
+                        <span class="category-tag category-videography">Videography</span>
+                    </div>
+                    <div class="project-skills-preview">
+                        <strong>Skills:</strong> Adobe Premiere Pro, Rule of Thirds, L-Cuts & J-Cuts, Audio Mixing
+                    </div>
                 </a>
             </section>
         </div>
     </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="mailto:nicole.sabin.m@gmail.com" class="footer-link" aria-label="Email Nicole Sabin">
+                        <svg class="footer-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        <span>nicole.sabin.m@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nicolesabin/" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="LinkedIn Profile">
+                        <svg class="footer-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        <span>Connect with me on LinkedIn</span>
+                    </a>
+                </div>
+                <p class="copyright">&copy; 2026 Nicole Sabin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
     <script src="js/projects-filter.js"></script>

@@ -172,28 +172,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Enhanced print functionality
+    // Resume PDF link - opens in new tab
     const downloadBtn = document.getElementById('downloadResumeBtn');
     if (downloadBtn) {
+        // Link is handled by href attribute, no JavaScript needed
+        // But we can add analytics tracking here if needed
         downloadBtn.addEventListener('click', function() {
-            // Expand all sections before printing
-            const allSections = document.querySelectorAll('.resume-section-content.collapsed');
-            allSections.forEach(section => {
-                section.classList.remove('collapsed');
-                const sectionTitle = section.closest('.resume-section').querySelector('.resume-section-title');
-                if (sectionTitle) {
-                    sectionTitle.classList.remove('collapsed');
-                    const icon = sectionTitle.querySelector('.toggle-icon');
-                    if (icon) {
-                        icon.style.transform = 'rotate(0deg)';
-                    }
-                }
-            });
-            
-            // Wait a moment for sections to expand, then print
-            setTimeout(() => {
-                window.print();
-            }, 300);
+            console.log('Resume PDF opened');
         });
     }
 
