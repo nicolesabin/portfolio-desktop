@@ -129,9 +129,9 @@ body.projects-page .page-title {
     background-clip: text;
 }
 
-/* About page - All Green gradient */
+/* About page - Pink gradient (more pink than orange) */
 body.about-page .page-title {
-    background: linear-gradient(90deg, #6daf99 0%, #14534c 100%);
+    background: var(--gradient-pink);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -516,8 +516,14 @@ a.site-logo,
 /* Main Content */
 .main-content {
     padding: 4rem 0;
+    padding-bottom: 3rem; /* Consistent content-to-footer spacing on all pages */
     min-height: calc(100vh - 200px);
     position: relative;
+}
+
+/* Home page: no gap between last project section and footer */
+body.home-page .main-content {
+    padding-bottom: 0;
 }
 
 /* Hero Section */
@@ -564,7 +570,7 @@ a.site-logo,
     transform: translateX(-50%);
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(234, 113, 130, 0.1) 0%, rgba(26, 163, 186, 0.08) 50%, transparent 70%);
+    background: radial-gradient(circle, rgba(234, 113, 130, 0.04) 0%, rgba(26, 163, 186, 0.03) 40%, transparent 55%);
     border-radius: 50%;
     pointer-events: none;
     z-index: -1;
@@ -2168,7 +2174,7 @@ a.site-logo,
 
 /* Footer */
 .site-footer {
-    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-dark) 100%); /* Darkened for WCAG AA contrast */
+    background: #0D7684;
     color: #fff;
     padding: 3rem 0;
     margin-top: 0;
@@ -3514,6 +3520,10 @@ body.dark-mode .hero-subtitle {
     color: #e8e8e8; /* Light text for dark mode */
 }
 
+body.dark-mode .hero-section::before {
+    background: radial-gradient(circle, rgba(234, 113, 130, 0.02) 0%, rgba(26, 163, 186, 0.015) 35%, transparent 50%);
+}
+
 body.dark-mode .project-card-filtered {
     background: var(--surface);
     border-color: rgba(255, 255, 255, 0.1);
@@ -3580,7 +3590,8 @@ body.dark-mode .skill-category:hover {
 
 body.dark-mode .about-text,
 body.dark-mode .about-values,
-body.dark-mode .about-skills {
+body.dark-mode .about-skills,
+body.dark-mode .about-learn-more {
     background: rgba(30, 30, 30, 0.6);
 }
 
@@ -3606,7 +3617,7 @@ body.dark-mode .form-group textarea:focus {
 }
 
 body.dark-mode .site-footer {
-    background: linear-gradient(135deg, rgba(13, 122, 138, 0.2) 0%, rgba(20, 83, 76, 0.3) 100%);
+    background: #0D7684;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -3616,7 +3627,7 @@ body.dark-mode .project-section-full[data-color="cyan"] {
 }
 
 body.dark-mode .project-section-full[data-color="yellow"] {
-    background-color: rgba(180, 130, 30, 0.4); /* Darker yellow */
+    background-color: rgba(180, 85, 35, 0.55); /* Darker orange */
 }
 
 body.dark-mode .project-section-full[data-color="pink"] {
@@ -3730,4 +3741,215 @@ body.dark-mode .breadcrumb a {
 
 body.dark-mode .breadcrumb a:hover {
     color: #80deea; /* Lighter cyan on hover */
+}
+
+/* Dark mode: ensure all text has accessible contrast (WCAG AA) */
+
+/* Page titles - colored to match light mode per page (gradients fail on dark bg) */
+body.dark-mode .page-title {
+    color: #e8e8e8;
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+}
+
+/* Projects page - pink/coral to match light pink-orange */
+body.dark-mode.projects-page .page-title {
+    color: #f8a5b5;
+}
+
+/* Contact page - cyan to match light cyan-teal */
+body.dark-mode.contact-page .page-title {
+    color: #4dd0e1;
+}
+
+/* Resume page - teal/cyan to match light gradient */
+body.dark-mode.resume-page .page-title {
+    color: #5ce1e1;
+}
+
+body.dark-mode .project-page-title {
+    color: #e8e8e8;
+}
+
+/* Resume: education & work text (base uses #262222 - invisible on dark) */
+body.dark-mode .education-degree,
+body.dark-mode .education-graduation,
+body.dark-mode .education-gpa,
+body.dark-mode .education-involvement {
+    color: #e8e8e8;
+}
+
+body.dark-mode .work-dates {
+    color: #e8e8e8;
+}
+
+body.dark-mode .work-date-separator {
+    color: #4dd0e1;
+}
+
+body.dark-mode .work-description {
+    color: #e8e8e8;
+}
+
+body.dark-mode .work-bullets li {
+    color: #e8e8e8;
+}
+
+/* Contact: form labels, required, errors, subtitles */
+body.dark-mode .form-label {
+    color: #4dd0e1;
+}
+
+body.dark-mode .required {
+    color: #80deea;
+}
+
+body.dark-mode .form-error,
+body.dark-mode .form-error.show {
+    color: #ffab91;
+}
+
+body.dark-mode .page-subtitle {
+    color: #b8b8b8;
+}
+
+body.dark-mode .contact-info-title {
+    color: #4dd0e1;
+}
+
+body.dark-mode .contact-email-link {
+    color: #4dd0e1;
+}
+
+body.dark-mode .contact-email-link:hover {
+    color: #80deea;
+}
+
+/* About: section titles */
+body.dark-mode .about-section-title {
+    color: #4dd0e1;
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+/* About page: "About Me" h1 stays pink in dark mode (visible on dark bg) */
+body.dark-mode.about-page .page-title {
+    color: #f8a5b5;
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+}
+
+/* About page bottom section: dark background so text is visible */
+body.dark-mode .about-work-together {
+    background: rgba(30, 30, 30, 0.6);
+}
+
+body.dark-mode .contact-cta {
+    color: #e8e8e8;
+}
+
+body.dark-mode .about-link {
+    color: #4dd0e1;
+}
+
+body.dark-mode .about-link:hover {
+    color: #80deea;
+}
+
+body.dark-mode .learn-more-content {
+    color: #e8e8e8;
+}
+
+body.dark-mode .learn-more-content .about-link {
+    color: #4dd0e1;
+}
+
+body.dark-mode .learn-more-content .about-link:hover {
+    color: #80deea;
+}
+
+body.dark-mode .work-together-content,
+body.dark-mode .work-together-content p {
+    color: #e8e8e8;
+}
+
+/* Project detail & meta (project subpages) */
+body.dark-mode .project-detail {
+    background: rgba(30, 30, 30, 0.6);
+}
+
+body.dark-mode .project-detail-title {
+    color: #4dd0e1;
+}
+
+body.dark-mode .project-detail-content,
+body.dark-mode .project-detail-content p {
+    color: #e8e8e8;
+}
+
+body.dark-mode .project-meta {
+    background: rgba(30, 30, 30, 0.6);
+}
+
+body.dark-mode .project-skills h3 {
+    color: #4dd0e1;
+}
+
+body.dark-mode .skills-tags li {
+    color: #e8e8e8;
+}
+
+body.dark-mode .project-content p,
+body.dark-mode .project-content ul,
+body.dark-mode .project-content ul li {
+    color: #e8e8e8;
+}
+
+/* Resume & contact cards: dark backgrounds so light text is readable */
+body.dark-mode .resume-section {
+    background: rgba(30, 30, 30, 0.6);
+}
+
+body.dark-mode .contact-info-card {
+    background: var(--surface);
+}
+
+body.dark-mode .contact-info-card .contact-info-title {
+    color: #4dd0e1;
+}
+
+/* Skills list / projects list on resume */
+body.dark-mode .skills-list li,
+body.dark-mode .projects-list-resume li {
+    color: #e8e8e8;
+    background: rgba(40, 40, 40, 0.8);
+}
+
+/* Off-canvas close button: light text on dark menu */
+body.dark-mode .close-menu {
+    color: #e8e8e8;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+body.dark-mode .close-menu:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+}
+
+/* Contact form reset button in dark mode */
+body.dark-mode .btn-reset {
+    background: rgba(40, 40, 40, 0.9);
+    color: #4dd0e1 !important;
+    border-color: #4dd0e1;
+}
+
+body.dark-mode .btn-reset:hover {
+    background: rgba(13, 122, 138, 0.4);
+    color: #ffffff !important;
+    border-color: #4dd0e1;
 }
