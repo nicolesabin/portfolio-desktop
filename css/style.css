@@ -2945,18 +2945,22 @@ body.dark-mode .theme-icon-dark {
 /* Project Hero Image */
 .project-hero-image {
     width: 100%;
-    max-width: 100%;
-    margin-bottom: 3rem;
+    max-width: 720px;
+    max-height: 360px;
+    margin: 0 auto 2rem auto;
     border-radius: var(--radius-xl);
     overflow: hidden;
     box-shadow: var(--shadow-lg);
+    background: #f0f0f0;
 }
 
 .project-main-image {
     width: 100%;
     height: auto;
+    max-height: 360px;
     display: block;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
 }
 
 /* Video Embed Styles */
@@ -3267,6 +3271,11 @@ body.dark-mode .theme-icon-dark {
 
     .project-page-title {
         font-size: 2rem;
+    }
+
+    .project-hero-image,
+    .project-main-image {
+        max-height: 240px;
     }
 
     .project-content {
@@ -3915,6 +3924,10 @@ body.dark-mode .project-detail-title {
 body.dark-mode .project-detail-content,
 body.dark-mode .project-detail-content p {
     color: #e8e8e8;
+}
+
+body.dark-mode .project-hero-image {
+    background: rgba(30, 30, 30, 0.6);
 }
 
 body.dark-mode .project-meta {
