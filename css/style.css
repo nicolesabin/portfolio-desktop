@@ -19,6 +19,7 @@
     --color-accent-yellow: #f4b537; /* Yellow/Gold */
     --color-teal-dark: #14534c;    /* Dark Teal - kept in palette */
     --color-dark: #14534c;         /* Dark Teal */
+    --color-blue-dark: #15444A;     /* Dark Blue */
     
     /* Legacy variable names for backward compatibility */
     --primary-color: #1aa3ba;
@@ -193,6 +194,7 @@ a:hover {
     text-underline-offset: 2px;
     background: linear-gradient(to bottom, rgba(26, 163, 186, 0.15) 0%, rgba(26, 163, 186, 0.15) 100%);
     background-size: 100% 100%;
+    border-radius: var(--radius-md);
     transform: translateY(-1px);
 }
 
@@ -679,6 +681,14 @@ body.home-page .main-content {
     background-color: var(--color-primary); /* Original brand color #1aa3ba */
 }
 
+.project-section-full[data-color="blue-dark"] {
+    background-color: var(--color-blue-dark); /* Original brand color #1aa3ba */
+}
+
+.project-section-full[data-color="green-dark"] {
+    background-color: var(--accent-dark); /* Original brand color #1aa3ba */
+}
+
 .project-section-full[data-color="yellow"] {
     background-color: var(--color-accent-yellow); /* Original brand color #f4b537 */
 }
@@ -805,8 +815,7 @@ body.home-page .main-content {
 }
 
 /* Bright sections - transparent/hollow buttons with dark border */
-.project-section-full[data-color="secondary"] .btn-learn-more,
-.project-section-full[data-color="cyan"] .btn-learn-more,
+
 .project-section-full[data-color="yellow"] .btn-learn-more,
 .project-section-full[data-color="pink"] .btn-learn-more {
     background: transparent;
@@ -814,13 +823,31 @@ body.home-page .main-content {
     border-color: var(--color-neutral);
 }
 
-.project-section-full[data-color="secondary"] .btn-learn-more:hover,
-.project-section-full[data-color="cyan"] .btn-learn-more:hover,
+
 .project-section-full[data-color="yellow"] .btn-learn-more:hover,
 .project-section-full[data-color="pink"] .btn-learn-more:hover {
-    background: rgba(38, 34, 34, 0.1); /* Slight gray tint on hover */
-    color: var(--color-neutral);
+    background: rgba(38, 34, 34); /* Slight gray tint on hover */
+    color: #ffffff;
+    text-decoration: none;
 }
+
+/* dark sections - transparent/hollow buttons with white border */
+.project-section-full[data-color="green-dark"] .btn-learn-more,
+.project-section-full[data-color="blue-dark"] .btn-learn-more {
+
+    background: transparent;
+    color: #ffffff; /* Dark gray text */
+    border-color: #ffffff;
+}
+
+.project-section-full[data-color="green-dark"] .btn-learn-more:hover,
+.project-section-full[data-color="blue-dark"] .btn-learn-more:hover {
+
+    background: rgb(255, 255, 255); /* Slight gray tint on hover */
+    color: #000000;
+    text-decoration: none;
+}
+
 
 /* Text colors - dark text on bright backgrounds, white on dark backgrounds */
 .project-section-full .project-title,

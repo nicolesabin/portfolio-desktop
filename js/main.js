@@ -79,11 +79,24 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Dark Mode Toggle
+    // Set to true when dark mode styling is ready to ship again.
+    const DARK_MODE_ENABLED = false;
+
     const themeToggle = document.getElementById('themeToggle');
     const body = document.body;
+
+    if (!DARK_MODE_ENABLED && themeToggle) {
+        const themeToggleContainer = themeToggle.closest('.footer-theme-toggle');
+        if (themeToggleContainer) {
+            themeToggleContainer.style.display = 'none';
+        }
+    }
     
     // Check for saved theme preference or default to system preference
     function getInitialTheme() {
+        if (!DARK_MODE_ENABLED) {
+            return 'light';
+        }
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
             return savedTheme;
@@ -94,6 +107,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Apply theme
     function applyTheme(theme) {
+        if (!DARK_MODE_ENABLED) {
+            theme = 'light';
+        }
         if (theme === 'dark') {
             body.classList.add('dark-mode');
             body.classList.remove('light-mode');
@@ -129,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
     applyTheme(initialTheme);
     
     // Toggle theme on button click
-    if (themeToggle) {
+    if (themeToggle && DARK_MODE_ENABLED) {
         themeToggle.addEventListener('click', function() {
             const currentTheme = body.classList.contains('dark-mode') ? 'dark' : 'light';
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -138,11 +154,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Listen for system theme changes
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
-        // Only apply system preference if user hasn't manually set a preference
-        if (!localStorage.getItem('theme')) {
-            applyTheme(e.matches ? 'dark' : 'light');
-        }
-    });
+    if (DARK_MODE_ENABLED) {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+            // Only apply system preference if user hasn't manually set a preference
+            if (!localStorage.getItem('theme')) {
+                applyTheme(e.matches ? 'dark' : 'light');
+            }
+        });
+    }
 });
 
