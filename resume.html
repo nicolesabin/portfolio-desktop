@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="apple-touch-icon" href="images/favicon.svg">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="resume-page">
     <!-- Skip to Main Content -->
     <a href="#main-content" class="skip-link">Skip to Main Content</a>
@@ -26,7 +28,7 @@
                         <li><a href="about.html">About</a></li>
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="resume.html" class="active">Resume</a></li>
-                     
+
                     </ul>
                 </nav>
                 <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -54,7 +56,7 @@
     </div>
 
     <!-- Main Content -->
-    <main id="main-content" class="main-content">
+    <main id="main-content" class="main-content" style="padding-bottom:0">
         <div class="container">
             <section class="page-header">
                 <h1 class="page-title">Nicole Sabin Resume</h1>
@@ -65,267 +67,319 @@
                 <div class="contact-buttons">
                     <a href="mailto:nicole.sabin.m@gmail.com" class="btn-contact btn-email">
                         <svg class="contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                         </svg>
                         <span>nicole.sabin.m@gmail.com</span>
                     </a>
-                    <a href="https://linkedin.com/in/nicolesabin" target="_blank" rel="noopener noreferrer" class="btn-contact btn-linkedin">
+                    <a href="https://linkedin.com/in/nicolesabin" target="_blank" rel="noopener noreferrer"
+                        class="btn-contact btn-linkedin">
                         <svg class="contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                         </svg>
                         <span>LinkedIn/in/nicolesabin</span>
                     </a>
-                    <a href="docs/nicole-sabin-resume.pdf" class="btn-contact btn-resume" id="downloadResumeBtn" target="_blank" rel="noopener noreferrer">
+                    <a href="docs/nicole-sabin-resume.pdf" class="btn-contact btn-resume" id="downloadResumeBtn"
+                        target="_blank" rel="noopener noreferrer">
                         <svg class="contact-icon" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0z"/>
+                            <path
+                                d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0z" />
                         </svg>
                         <span>View Resume as PDF</span>
                     </a>
                 </div>
             </section>
-
-            <!-- Education Section -->
-            <section class="resume-section resume-education">
-                <h2 class="resume-section-title" data-section="education">
-                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z" fill="currentColor"/>
-                    </svg>
-                    <span>Education</span>
-                </h2>
-                <div class="resume-section-content" id="education-content">
-                    <!-- Master's Degree -->
-                    <div class="education-item">
-                        <div class="education-header">
-                            <h4 class="education-institution">Utah State University</h4>
-                            <span class="education-degree">Master's Degree</span>
-                        </div>
-                        <div class="education-details">
-                            <p class="education-field">Master of Arts in Instructional Technology and Learning Sciences</p>
-                            <div class="education-meta">
-                                <span class="education-graduation">Graduation: May 2023</span>
-                                <span class="education-gpa">GPA: 4.0</span>
-                            </div>
-                            <div class="education-involvement">
-                                <strong>Involvement:</strong> Instructional Technology Student Association Master's Vice President & Communications Officer
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Bachelor's Degree -->
-                    <div class="education-item">
-                        <div class="education-header">
-                            <h4 class="education-institution">Utah State University</h4>
-                            <span class="education-degree">Bachelor's Degree</span>
-                        </div>
-                        <div class="education-details">
-                            <p class="education-field">Bachelor of Science in Communication Studies</p>
-                            <div class="education-meta">
-                                <span class="education-graduation">Graduation: December 2020</span>
-                                <span class="education-gpa">GPA: 3.83</span>
-                            </div>
-                            <div class="education-involvement">
-                                <strong>Minor:</strong> Mathematics | <strong>Awards:</strong> Graduated Magna Cum Laude, Dean's List Spring 2020
-                            </div>
-                            <div class="education-involvement">
-                                <strong>Involvement:</strong> Math & Statistics Teaching Fellow, Public Speaking Teaching Fellow, Utah State University Student Association: Series Committee and President's Cabinet, National Society of Leadership and Success
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Weber State Certificate -->
-                    <div class="education-item">
-                        <div class="education-header">
-                            <h4 class="education-institution">Weber State University</h4>
-                            <span class="education-degree">Certificate & Associate</span>
-                        </div>
-                        <div class="education-details">
-                            <p class="education-field">Certificate of Spanish Proficiency, Associate of Arts in Spanish</p>
-                            <div class="education-meta">
-                                <span class="education-graduation">Graduation: June 2025</span>
-                                <span class="education-gpa">GPA: 3.8</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Skills & Abilities Section -->
-            <section class="resume-section resume-skills">
-                <h2 class="resume-section-title" data-section="skills">
-                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
-                        <path d="M2 17L12 22L22 17" fill="currentColor"/>
-                        <path d="M2 12L12 17L22 12" fill="currentColor"/>
-                    </svg>
-                    <span>Skills & Abilities</span>
-                </h2>
-                <div class="resume-section-content" id="skills-content">
-                    <div class="skills-grid">
-                        <div class="skill-category" data-skill="uxui">
-                            <div class="skill-icon">
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
-                                    <path d="M9 9H15M9 15H15M9 12H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                </svg>
-                            </div>
-                            <h4 class="skill-category-title">UX/UI Design</h4>
-                            <p class="skill-details">Prototyping, Wireframing, UX Design, UI Design, User-Centered Design, Digital Accessibility, WCAG Standards</p>
-                        </div>
-                        <div class="skill-category" data-skill="design-tools">
-                            <div class="skill-icon">
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <h4 class="skill-category-title">Design & Prototyping Tools</h4>
-                            <p class="skill-details">Adobe XD, Articulate Storyline, HTML/CSS, Responsive Design, Learning Management Systems (LMS)</p>
-                        </div>
-                        <div class="skill-category" data-skill="project-management">
-                            <div class="skill-icon">
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 6.25278V19.2528M12 6.25278C10.8321 5.47686 9.24649 5 7.5 5C5.75351 5 4.16789 5.47686 3 6.25278V19.2528C4.16789 18.4769 5.75351 18 7.5 18C9.24649 18 10.8321 18.4769 12 19.2528M12 6.25278C13.1679 5.47686 14.7535 5 16.5 5C18.2465 5 19.8321 5.47686 21 6.25278V19.2528C19.8321 18.4769 18.2465 18 16.5 18C14.7535 18 13.1679 18.4769 12 19.2528" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <h4 class="skill-category-title">Project Management & Communication</h4>
-                            <p class="skill-details">Technical Writing, Training & Onboarding, Adult Learning Theory, E-Learning</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Work History Section -->
-            <section class="resume-section resume-work">
-                <h2 class="resume-section-title" data-section="work">
-                    <svg class="section-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 2H14C15.1 2 16 2.9 16 4V6H20C21.1 6 22 6.9 22 8V19C22 20.1 21.1 21 20 21H4C2.9 21 2 20.1 2 19V8C2 6.9 2.9 6 4 6H8V4C8 2.9 8.9 2 10 2ZM10 4V6H14V4H10ZM4 8V19H20V8H4Z"/>
-                        <path d="M4 8H20V10H4V8Z"/>
-                    </svg>
-                    <span>Work History Highlights</span>
-                </h2>
-                <div class="resume-section-content" id="work-content">
-                    <!-- Current Position -->
-                    <div class="work-item">
-                        <div class="work-header">
-                            <div class="work-dates">
-                                <span class="work-date-start">Aug. 2023</span>
-                                <span class="work-date-separator">-</span>
-                                <span class="work-date-end">Present</span>
-                            </div>
-                            <h4 class="work-company">Weber State University</h4>
-                        </div>
-                        <h5 class="work-position">UI/UX Developer</h5>
-                        <div class="work-description">
-                            <ul class="work-bullets">
-                                <li>Partnered with university stakeholders to design and maintain over 120 student-facing websites, increasing student usage of key on-campus resources and reducing calls to support departments by providing intuitive self-service solutions.</li>
-                                <li>Prototyped and designed responsive mobile-first web pages using HTML/CSS while ensuring WCAG accessibility standards and adapting desktop experiences for optimal performance on tablet and mobile devices.</li>
-                                <li>Collaborated with marketing and graphic design teams to increase student retention and perseverance.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Instructional Design Consultant -->
-                    <div class="work-item">
-                        <div class="work-header">
-                            <div class="work-dates">
-                                <span class="work-date-start">Feb. 2022</span>
-                                <span class="work-date-separator">-</span>
-                                <span class="work-date-end">June 2023</span>
-                            </div>
-                            <h4 class="work-company">Various Clients</h4>
-                        </div>
-                        <h5 class="work-position">Instructional Design Consultant</h5>
-                        <div class="work-description">
-                            <ul class="work-bullets">
-                                <li>Designed and developed comprehensive e-learning modules and Canvas LMS courses for new employee onboarding across multiple industries.</li>
-                                <li>Engaged with Subject Matter Experts (SMEs) to translate complex information into engaging, interactive, and user-friendly training modules.</li>
-                                <li>Managed project schedules and deliverables for clients including Instructure, 21stCentEd, Florida Atlantic University, Theta Marine Group, and United Nations Institute for Training and Research (UNITAR).</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Graduate Teaching Assistant -->
-                    <div class="work-item">
-                        <div class="work-header">
-                            <div class="work-dates">
-                                <span class="work-date-start">Sep. 2021</span>
-                                <span class="work-date-separator">-</span>
-                                <span class="work-date-end">May 2023</span>
-                            </div>
-                            <h4 class="work-company">Utah State University</h4>
-                        </div>
-                        <h5 class="work-position">Graduate Teaching Assistant</h5>
-                        <div class="work-description">
-                            <ul class="work-bullets">
-                                <li>Evaluated learning outcomes for over 180 undergraduate students enrolled in a Breadth Creative Arts course.</li>
-                                <li>Actively monitored the Canvas LMS course to enhance the learners' experience with the content and assessments.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Academic Advisor -->
-                    <div class="work-item">
-                        <div class="work-header">
-                            <div class="work-dates">
-                                <span class="work-date-start">Feb. 2021</span>
-                                <span class="work-date-separator">-</span>
-                                <span class="work-date-end">Aug. 2021</span>
-                            </div>
-                            <h4 class="work-company">Utah State University</h4>
-                        </div>
-                        <h5 class="work-position">Academic Advisor</h5>
-                        <div class="work-description">
-                            <ul class="work-bullets">
-                                <li>Independently managed a caseload of 400+ students in two separate departments at the Huntsman School of Business by supporting students' academic goals and analyzing student data with Argos, Salesforce, and Excel.</li>
-                                <li>Coordinated rollout of new major with stakeholders while informing students of changes and tracking interest.</li>
-                                <li>Designed and delivered instructional workshops to orient incoming students to their major and outline degree paths and expectations.</li>
-                                <li>Utilized data analytics (Argos, Salesforce, Excel) to identify and implement necessary academic interventions.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Degree Works Peer Advisor -->
-                    <div class="work-item">
-                        <div class="work-header">
-                            <div class="work-dates">
-                                <span class="work-date-start">Aug. 2019</span>
-                                <span class="work-date-separator">-</span>
-                                <span class="work-date-end">Feb. 2021</span>
-                            </div>
-                            <h4 class="work-company">Utah State University</h4>
-                        </div>
-                        <h5 class="work-position">Peer Advisor Coordinator</h5>
-                        <div class="work-description">
-                            <ul class="work-bullets">
-                                <li>Restructured the Peer Advisor Certification Program to focus on Peer Advisors' professional development and the creation of new initiatives in their departments.</li>
-                                <li>Produced new training modules and integrated existing training plans to a centralized Canvas page for over 35 Peer Advisors campus wide. Directly involved in the hiring and onboarding process for 4 Peer Advisors.</li>
-                                <li>Collaborated with several departments throughout USU to increase the use of Degree Works and implemented a marketing plan to increase student success and retention.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- A-Team Peer Mentor -->
-                    <div class="work-item">
-                        <div class="work-header">
-                            <div class="work-dates">
-                                <span class="work-date-start">Jan. 2019</span>
-                                <span class="work-date-separator">-</span>
-                                <span class="work-date-end">Jan. 2020</span>
-                            </div>
-                            <h4 class="work-company">Utah State University</h4>
-                        </div>
-                        <h5 class="work-position">A-Team Peer Mentor</h5>
-                        <div class="work-description">
-                            <ul class="work-bullets">
-                                <li>Facilitated engaging orientation sessions for over 100 students, introducing university support resources.</li>
-                                <li>Maintained current knowledge of university policies and resources to provide accurate guidance and support to students.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </div>
+        <section class="section-full" data-color="blue-dark" style="margin-bottom: 0;">
+            <div class="container">
+                <!-- Education Section -->
+                <section class="resume-section resume-education">
+                    <h2 class="resume-section-title" data-section="education">
+                        <svg class="section-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z"
+                                fill="currentColor" />
+                        </svg>
+                        <span>Education</span>
+                    </h2>
+                    <div class="resume-section-content" id="education-content">
+                        <!-- Master's Degree -->
+                        <div class="education-item">
+                            <div class="education-header">
+                                <h4 class="education-institution">Utah State University</h4>
+                                <span class="education-degree">Master's Degree</span>
+                            </div>
+                            <div class="education-details">
+                                <p class="education-field">Master of Arts in Instructional Technology and Learning
+                                    Sciences</p>
+                                <div class="education-meta">
+                                    <span class="education-graduation">Graduation: May 2023</span>
+                                    <span class="education-gpa">GPA: 4.0</span>
+                                </div>
+                                <div class="education-involvement">
+                                    <strong>Involvement:</strong> Instructional Technology Student Association Master's
+                                    Vice President & Communications Officer
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bachelor's Degree -->
+                        <div class="education-item">
+                            <div class="education-header">
+                                <h4 class="education-institution">Utah State University</h4>
+                                <span class="education-degree">Bachelor's Degree</span>
+                            </div>
+                            <div class="education-details">
+                                <p class="education-field">Bachelor of Science in Communication Studies</p>
+                                <div class="education-meta">
+                                    <span class="education-graduation">Graduation: December 2020</span>
+                                    <span class="education-gpa">GPA: 3.83</span>
+                                </div>
+                                <div class="education-involvement">
+                                    <strong>Minor:</strong> Mathematics | <strong>Awards:</strong> Graduated Magna Cum
+                                    Laude, Dean's List Spring 2020
+                                </div>
+                                <div class="education-involvement">
+                                    <strong>Involvement:</strong> Math & Statistics Teaching Fellow, Public Speaking
+                                    Teaching Fellow, Utah State University Student Association: Series Committee and
+                                    President's Cabinet, National Society of Leadership and Success
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Weber State Certificate -->
+                        <div class="education-item">
+                            <div class="education-header">
+                                <h4 class="education-institution">Weber State University</h4>
+                                <span class="education-degree">Certificate & Associate</span>
+                            </div>
+                            <div class="education-details">
+                                <p class="education-field">Certificate of Spanish Proficiency, Associate of Arts in
+                                    Spanish</p>
+                                <div class="education-meta">
+                                    <span class="education-graduation">Graduation: June 2025</span>
+                                    <span class="education-gpa">GPA: 3.8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills & Abilities Section -->
+                <section class="resume-section resume-skills">
+                    <h2 class="resume-section-title" data-section="skills">
+                        <svg class="section-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor" />
+                            <path d="M2 17L12 22L22 17" fill="currentColor" />
+                            <path d="M2 12L12 17L22 12" fill="currentColor" />
+                        </svg>
+                        <span>Skills & Abilities</span>
+                    </h2>
+                    <div class="resume-section-content" id="skills-content">
+                        <div class="skills-grid">
+                            <div class="skill-category" data-skill="uxui">
+                                <div class="skill-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor"
+                                            stroke-width="2" />
+                                        <path d="M9 9H15M9 15H15M9 12H15" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <h4 class="skill-category-title">UX/UI Design</h4>
+                                <p class="skill-details">Prototyping, Wireframing, UX Design, UI Design, User-Centered
+                                    Design, Digital Accessibility, WCAG Standards</p>
+                            </div>
+                            <div class="skill-category" data-skill="design-tools">
+                                <div class="skill-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <h4 class="skill-category-title">Design & Prototyping Tools</h4>
+                                <p class="skill-details">Adobe XD, Articulate Storyline, HTML/CSS, Responsive Design,
+                                    Learning Management Systems (LMS)</p>
+                            </div>
+                            <div class="skill-category" data-skill="project-management">
+                                <div class="skill-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 6.25278V19.2528M12 6.25278C10.8321 5.47686 9.24649 5 7.5 5C5.75351 5 4.16789 5.47686 3 6.25278V19.2528C4.16789 18.4769 5.75351 18 7.5 18C9.24649 18 10.8321 18.4769 12 19.2528M12 6.25278C13.1679 5.47686 14.7535 5 16.5 5C18.2465 5 19.8321 5.47686 21 6.25278V19.2528C19.8321 18.4769 18.2465 18 16.5 18C14.7535 18 13.1679 18.4769 12 19.2528"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <h4 class="skill-category-title">Project Management & Communication</h4>
+                                <p class="skill-details">Technical Writing, Training & Onboarding, Adult Learning
+                                    Theory, E-Learning</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Work History Section -->
+                <section class="resume-section resume-work">
+                    <h2 class="resume-section-title" data-section="work">
+                        <svg class="section-icon" viewBox="0 0 24 24" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 2H14C15.1 2 16 2.9 16 4V6H20C21.1 6 22 6.9 22 8V19C22 20.1 21.1 21 20 21H4C2.9 21 2 20.1 2 19V8C2 6.9 2.9 6 4 6H8V4C8 2.9 8.9 2 10 2ZM10 4V6H14V4H10ZM4 8V19H20V8H4Z" />
+                            <path d="M4 8H20V10H4V8Z" />
+                        </svg>
+                        <span>Work History</span>
+                    </h2>
+                    <div class="resume-section-content" id="work-content">
+
+
+                        <!-- Instructional Design Consultant -->
+                        <div class="work-item">
+                            <div class="work-header">
+                                <div class="work-dates">
+                                    <span class="work-date-start">Feb. 2022</span>
+                                    <span class="work-date-separator">-</span>
+                                    <span class="work-date-end">Current</span>
+                                </div>
+                                <h4 class="work-company">Various Clients</h4>
+                            </div>
+                            <h5 class="work-position">Instructional Design Consultant</h5>
+                            <div class="work-description">
+                                <ul class="work-bullets">
+                                    <li>Designed and developed comprehensive e-learning modules and Canvas LMS courses
+                                        for new employee onboarding across multiple industries.</li>
+                                    <li>Engaged with Subject Matter Experts (SMEs) to translate complex information into
+                                        engaging, interactive, and user-friendly training modules.</li>
+                                    <li>Managed project schedules and deliverables for clients including Instructure,
+                                        21stCentEd, Florida Atlantic University, Theta Marine Group, and United Nations
+                                        Institute for Training and Research (UNITAR).</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- WEber -->
+                        <div class="work-item">
+                            <div class="work-header">
+                                <div class="work-dates">
+                                    <span class="work-date-start">Aug. 2023</span>
+                                    <span class="work-date-separator">-</span>
+                                    <span class="work-date-end">Feb. 2026</span>
+                                </div>
+                                <h4 class="work-company">Weber State University</h4>
+                            </div>
+                            <h5 class="work-position">UI/UX Developer</h5>
+                            <div class="work-description">
+                                <ul class="work-bullets">
+                                    <li>Partnered with university stakeholders to design and maintain over 120
+                                        student-facing websites, increasing student usage of key on-campus resources and
+                                        reducing calls to support departments by providing intuitive self-service
+                                        solutions.</li>
+                                    <li>Prototyped and designed responsive mobile-first web pages using HTML/CSS while
+                                        ensuring WCAG accessibility standards and adapting desktop experiences for
+                                        optimal performance on tablet and mobile devices.</li>
+                                    <li>Collaborated with marketing and graphic design teams to increase student
+                                        retention and perseverance.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Graduate Teaching Assistant -->
+                        <div class="work-item">
+                            <div class="work-header">
+                                <div class="work-dates">
+                                    <span class="work-date-start">Sep. 2021</span>
+                                    <span class="work-date-separator">-</span>
+                                    <span class="work-date-end">May 2023</span>
+                                </div>
+                                <h4 class="work-company">Utah State University</h4>
+                            </div>
+                            <h5 class="work-position">Graduate Teaching Assistant</h5>
+                            <div class="work-description">
+                                <ul class="work-bullets">
+                                    <li>Evaluated learning outcomes for over 180 undergraduate students enrolled in a
+                                        Breadth Creative Arts course.</li>
+                                    <li>Actively monitored the Canvas LMS course to enhance the learners' experience
+                                        with the content and assessments.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Academic Advisor -->
+                        <div class="work-item">
+                            <div class="work-header">
+                                <div class="work-dates">
+                                    <span class="work-date-start">Feb. 2021</span>
+                                    <span class="work-date-separator">-</span>
+                                    <span class="work-date-end">Aug. 2021</span>
+                                </div>
+                                <h4 class="work-company">Utah State University</h4>
+                            </div>
+                            <h5 class="work-position">Academic Advisor</h5>
+                            <div class="work-description">
+                                <ul class="work-bullets">
+                                    <li>Independently managed a caseload of 400+ students in two separate departments at
+                                        the Huntsman School of Business by supporting students' academic goals and
+                                        analyzing student data with Argos, Salesforce, and Excel.</li>
+                                    <li>Coordinated rollout of new major with stakeholders while informing students of
+                                        changes and tracking interest.</li>
+                                    <li>Designed and delivered instructional workshops to orient incoming students to
+                                        their major and outline degree paths and expectations.</li>
+                                    <li>Utilized data analytics (Argos, Salesforce, Excel) to identify and implement
+                                        necessary academic interventions.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Degree Works Peer Advisor -->
+                        <div class="work-item">
+                            <div class="work-header">
+                                <div class="work-dates">
+                                    <span class="work-date-start">Aug. 2019</span>
+                                    <span class="work-date-separator">-</span>
+                                    <span class="work-date-end">Feb. 2021</span>
+                                </div>
+                                <h4 class="work-company">Utah State University</h4>
+                            </div>
+                            <h5 class="work-position">Peer Advisor Coordinator</h5>
+                            <div class="work-description">
+                                <ul class="work-bullets">
+                                    <li>Restructured the Peer Advisor Certification Program to focus on Peer Advisors'
+                                        professional development and the creation of new initiatives in their
+                                        departments.</li>
+                                    <li>Produced new training modules and integrated existing training plans to a
+                                        centralized Canvas page for over 35 Peer Advisors campus wide. Directly involved
+                                        in the hiring and onboarding process for 4 Peer Advisors.</li>
+                                    <li>Collaborated with several departments throughout USU to increase the use of
+                                        Degree Works and implemented a marketing plan to increase student success and
+                                        retention.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- A-Team Peer Mentor -->
+                        <div class="work-item">
+                            <div class="work-header">
+                                <div class="work-dates">
+                                    <span class="work-date-start">Jan. 2019</span>
+                                    <span class="work-date-separator">-</span>
+                                    <span class="work-date-end">Jan. 2020</span>
+                                </div>
+                                <h4 class="work-company">Utah State University</h4>
+                            </div>
+                            <h5 class="work-position">A-Team Peer Mentor</h5>
+                            <div class="work-description">
+                                <ul class="work-bullets">
+                                    <li>Facilitated engaging orientation sessions for over 100 students, introducing
+                                        university support resources.</li>
+                                    <li>Maintained current knowledge of university policies and resources to provide
+                                        accurate guidance and support to students.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
     </main>
 
     <footer class="site-footer">
@@ -334,25 +388,35 @@
                 <div class="footer-links">
                     <a href="mailto:nicole.sabin.m@gmail.com" class="footer-link" aria-label="Email Nicole Sabin">
                         <svg class="footer-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                         </svg>
                         <span>nicole.sabin.m@gmail.com</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/nicolesabin/" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="LinkedIn Profile">
+                    <a href="https://www.linkedin.com/in/nicolesabin/" target="_blank" rel="noopener noreferrer"
+                        class="footer-link" aria-label="LinkedIn Profile">
                         <svg class="footer-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                         </svg>
                         <span>Connect with me on LinkedIn</span>
                     </a>
                 </div>
                 <div class="footer-theme-toggle">
                     <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark mode">
-                        <svg class="theme-icon theme-icon-light" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M12 2V4M12 20V22M4.93 4.93L6.34 6.34M17.66 17.66L19.07 19.07M2 12H4M20 12H22M4.93 19.07L6.34 17.66M17.66 6.34L19.07 4.93" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <svg class="theme-icon theme-icon-light" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M12 2V4M12 20V22M4.93 4.93L6.34 6.34M17.66 17.66L19.07 19.07M2 12H4M20 12H22M4.93 19.07L6.34 17.66M17.66 6.34L19.07 4.93"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                         </svg>
-                        <svg class="theme-icon theme-icon-dark" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg class="theme-icon theme-icon-dark" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <span class="theme-toggle-text">Dark Mode</span>
                     </button>
@@ -365,4 +429,5 @@
     <script src="js/main.js"></script>
     <script src="js/resume.js"></script>
 </body>
+
 </html>

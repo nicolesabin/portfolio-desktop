@@ -20,6 +20,14 @@
     --color-teal-dark: #14534c;    /* Dark Teal - kept in palette */
     --color-dark: #14534c;         /* Dark Teal */
     --color-blue-dark: #15444A;     /* Dark Blue */
+
+     /* pastel versions */
+     
+     --pastel-accent-orange: #f79758;       /* Orange/Coral */
+     --pastel-accent-pink: #ec8794;  /* Pink/Coral */
+     --pastel-accent-blue: #71d9eb;  /* Bright Cyan/Blue */
+     --pastel-accent-yellow: #fdcf75; /* Yellow/Gold */
+    
     
     /* Legacy variable names for backward compatibility */
     --primary-color: #1aa3ba;
@@ -1793,7 +1801,7 @@ body.home-page .main-content {
 .resume-section-title .section-icon {
     width: 28px;
     height: 28px;
-    fill: var(--color-primary);
+    fill: var(--color-primary-dark);
     flex-shrink: 0;
 }
 
@@ -1839,7 +1847,7 @@ body.home-page .main-content {
 
 /* Education Items */
 .education-item {
-    background: #fff;
+    background: #ffffff;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     border-radius: 6px;
@@ -1847,6 +1855,7 @@ body.home-page .main-content {
     opacity: 1;
     transform: translateY(0);
     position: relative;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .education-item::before {
@@ -1856,7 +1865,7 @@ body.home-page .main-content {
     top: 0;
     bottom: 0;
     width: 4px;
-    background: linear-gradient(135deg, #ffc947 0%, #ffbf37 50%, #f4b537 100%);
+    background:  #f4b537;
     border-radius: 6px 0 0 6px;
 }
 
@@ -1957,10 +1966,6 @@ body.home-page .main-content {
     transform: translateY(0);
 }
 
-.education-item:hover {
-    transform: translateX(5px);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
 
 .education-header {
     display: flex;
@@ -2024,7 +2029,7 @@ body.home-page .main-content {
     padding: 1.5rem 1.25rem;
     border-radius: 8px;
     text-align: center;
-    border: 2px solid var(--border-color);
+
     transition: all 0.3s ease;
     cursor: default;
     display: flex;
@@ -2033,12 +2038,6 @@ body.home-page .main-content {
     gap: 0.75rem;
 }
 
-.skill-category:hover {
-    border-color: var(--accent-color);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transform: translateY(-3px);
-    background: #f9f9f9;
-}
 
 .skill-icon {
     width: 48px;
@@ -2054,25 +2053,18 @@ body.home-page .main-content {
 }
 
 /* Light color gradients for each skill category */
-.skill-category[data-skill="uxui"] .skill-icon {
-    background: linear-gradient(135deg, #ffb3d1 0%, #ffa8c8 50%, #ff9ec0 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+.skill-category[data-skill="uxui"]{
+    background:  var(--pastel-accent-pink) ;
+    
 }
 
-.skill-category[data-skill="design-tools"] .skill-icon {
-    background: linear-gradient(135deg, #ffe5b3 0%, #ffdd99 50%, #ffd580 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+.skill-category[data-skill="design-tools"] {
+    background: var(--pastel-accent-yellow);
 }
 
-.skill-category[data-skill="project-management"] .skill-icon {
-    background: linear-gradient(135deg, #ffccb3 0%, #ffc299 50%, #ffb880 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+.skill-category[data-skill="project-management"]  {
+    background: var(--pastel-accent-orange);
+  
 }
 
 .skill-icon svg {
@@ -2080,16 +2072,18 @@ body.home-page .main-content {
     height: 100%;
 }
 
-.skill-category:hover .skill-icon {
-    transform: scale(1.1);
-}
+
 
 .skill-category-title {
     font-size: 1rem;
-    font-weight: 500;
-    color: var(--color-neutral); /* Dark Gray - passes WCAG AA */
+    font-weight: 700;
     margin: 0;
-    line-height: 1.4;
+    color: #1a1a1a;
+    line-height: 1.5;
+}
+.skill-details {
+    font-size: .9rem;
+    
 }
 
 /* Work Year Labels */
@@ -2105,6 +2099,7 @@ body.home-page .main-content {
     opacity: 1;
     transform: translateY(0);
     position: relative;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .work-item::before {
@@ -2114,14 +2109,11 @@ body.home-page .main-content {
     top: 0;
     bottom: 0;
     width: 4px;
-    background: linear-gradient(135deg, #ff9a4d 0%, #ff8c3d 50%, #f2863d 100%);
+    background: #f2863d ;
     border-radius: 6px 0 0 6px;
 }
 
-.work-item:hover {
-    transform: translateX(5px);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
+
 
 .work-header {
     display: flex;
@@ -3634,10 +3626,7 @@ body.dark-mode .skill-category {
     border-color: rgba(255, 255, 255, 0.1);
 }
 
-body.dark-mode .skill-category:hover {
-    background: rgba(40, 40, 40, 0.8);
-    border-color: rgba(234, 113, 130, 0.4);
-}
+
 
 body.dark-mode .about-text,
 body.dark-mode .about-values,
