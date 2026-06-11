@@ -611,6 +611,25 @@ body.home-page .main-content {
     }
 }
 
+/* edge to edge section */
+.section-full[data-color="blue-dark"]  {
+
+    background-color: var(--color-blue-dark);
+
+    padding: 2rem 1rem ;
+    margin-bottom:2rem;
+}
+
+.section-full[data-color="accent-orange"]  {
+
+    background-color:#f1996e;
+
+    padding: 2rem 1rem ;
+
+}
+
+
+
 /* Section Titles */
 .section-title {
     font-size: clamp(2rem, 5vw, 3rem);
@@ -1307,10 +1326,9 @@ body.home-page .main-content {
 }
 
 .about-text {
-    background: #f9f9f9;
-    padding: 2.5rem;
+   
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+   
 }
 
 .about-text p {
@@ -1325,7 +1343,7 @@ body.home-page .main-content {
 
 /* About Values */
 .about-values {
-    margin: 0 auto 3rem auto;
+    margin:  3rem auto;
     background: #f9f9f9;
     padding: 2.5rem;
     border-radius: 8px;
@@ -1345,8 +1363,8 @@ body.home-page .main-content {
     border-radius: 6px;
     color: #262222;
     line-height: 1.6;
-    transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .values-list li::before {
@@ -1360,10 +1378,7 @@ body.home-page .main-content {
     border-radius: 6px 0 0 6px;
 }
 
-.values-list li:hover {
-    transform: translateX(5px);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
+
 
 .values-list li:last-child {
     margin-bottom: 0;
@@ -1540,11 +1555,12 @@ body.home-page .main-content {
 
 /* Work Together */
 .about-work-together {
-    margin: 0 auto 3rem auto;
+    margin: 3rem auto;
     background: #f9f9f9;
     padding: 2.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align:center;
 }
 
 .work-together-content {
@@ -1559,7 +1575,7 @@ body.home-page .main-content {
 .contact-cta {
     font-size: 1.1rem;
     font-weight: 500;
-    color: var(--primary-color);
+
     margin-top: 2rem !important;
 }
 
@@ -1612,11 +1628,10 @@ body.home-page .main-content {
 
 /* Resume Contact Information */
 .resume-contact {
-    background: #f9f9f9;
-    padding: 2rem;
+    
     margin-bottom: 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+   
 }
 
 .contact-buttons {
@@ -2822,7 +2837,7 @@ body.dark-mode .theme-icon-dark {
 .project-card-filtered .project-skills-preview {
     margin: 0.75rem 0 0 0;
     padding: 0.75rem .75;
-    background: #fff;
+    background: rgb(26 163 186 / 7%);
     border-radius: 4px;
     font-size: 0.9rem;
     color: #262222;
@@ -2910,7 +2925,7 @@ body.dark-mode .theme-icon-dark {
 
 
 .project-skills-preview strong {
-    color: var(--primary-color);
+    color: #262222;
 }
 
 /* Breadcrumb */
