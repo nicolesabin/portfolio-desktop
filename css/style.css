@@ -19,7 +19,7 @@
     --color-accent-yellow: #f4b537; /* Yellow/Gold */
     --color-teal-dark: #14534c;    /* Dark Teal - kept in palette */
     --color-dark: #14534c;         /* Dark Teal */
-    --color-blue-dark: #15444A;     /* Dark Blue */
+    --color-blue-dark: #174151;     /* Dark Blue */
 
      /* pastel versions */
      
@@ -27,6 +27,8 @@
      --pastel-accent-pink: #ec8794;  /* Pink/Coral */
      --pastel-accent-blue: #71d9eb;  /* Bright Cyan/Blue */
      --pastel-accent-yellow: #fdcf75; /* Yellow/Gold */
+     --pastel-light-blue: #A8DAE4;
+
     
     
     /* Legacy variable names for backward compatibility */
@@ -304,10 +306,10 @@ a.site-logo,
 }
 
 .menu-toggle {
-    background: rgba(20, 83, 76, 0.1);
-    border: 2px solid rgba(20, 83, 76, 0.3);
+    background: linear-gradient(to bottom, rgba(26, 163, 186, 0.15) 0%, rgba(26, 163, 186, 0.15) 100%);
+    border: 2px solid #22A6BD;
     border-radius: var(--radius-md);
-    color: var(--color-primary);
+    color: #06323d;
     font-size: 0.875rem;
     font-weight: 600;
     cursor: pointer;
@@ -437,10 +439,10 @@ a.site-logo,
 }
 
 .close-menu {
-    background: rgba(19, 83, 76, 0.1);
-    border: 2px solid rgba(19, 83, 76, 0.2);
+     background: linear-gradient(to bottom, rgba(26, 163, 186, 0.15) 0%, rgba(26, 163, 186, 0.15) 100%);
+    border: 2px solid #22A6BD;
     border-radius: var(--radius-full);
-    color: var(--accent-dark);
+    color: #06323d;
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0;
@@ -489,17 +491,17 @@ a.site-logo,
 }
 
 .off-canvas-nav a:hover {
-    background: rgba(19, 83, 76, 0.1);
+    background: #0d7a8a26;
     padding-left: 2rem;
-    color: #0a2e28;
+    color: #0d7a8a;
     font-weight: 600;
 }
 
 .off-canvas-nav a.active {
-    background: rgba(19, 83, 76, 0.15);
+    background: #0d7a8a26;
     font-weight: 700;
-    color: #0a2e28;
-    border-left: 4px solid var(--accent-color);
+    color: #011a1e;
+    border-left: 4px solid #1AA3BA;
 }
 
 /* Overlay */
@@ -2924,11 +2926,11 @@ body.dark-mode .theme-icon-dark {
 .breadcrumb {
     margin-bottom: 2rem;
     font-size: 0.95rem;
-    color: var(--secondary-color);
+    color: var(--color-primary-dark);
 }
 
 .breadcrumb a {
-    color: var(--color-primary);
+    color: var(--color-blue-dark);
     text-decoration: underline;
 }
 
